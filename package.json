@@ -1,0 +1,24 @@
+{
+  "name": "mars-rover",
+  "version": "1.0.0",
+  "description": "mars rover coding problem",
+  "main": "rover.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-cleary914/mars-rover.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-cleary914/mars-rover/issues"
+  },
+  "homepage": "https://github.com/j-cleary914/mars-rover#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0"
+  }
+}
