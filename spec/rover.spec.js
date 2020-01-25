@@ -26,4 +26,12 @@ describe("updatePos", () => {
     expect(updatePos([1, 1, "S"], "M")).to.eql([1, 0, "S"]);
     expect(updatePos([1, 1, "W"], "M")).to.eql([0, 1, "W"]);
   });
+  it("handles longer instructions", () => {
+    expect(updatePos([1, 1, "N"], "MMRMRMLMLMMML")).to.eql([3, 5, "W"]);
+    expect(
+      updatePos([0, 0, "E"], "MMMMMLMMMMMLMMMMMLMMMMLMMMMLMMMLMMMLMMLMMLMMLMLM")
+    ).to.eql([2, 3, "S"]);
+    expect(updatePos([1, 2, "N"], "LMLMLMLMM")).to.eql([1, 3, "N"]);
+    expect(updatePos([3, 3, "E"], "MMRMMRMRRM")).to.eql([5, 1, "E"]);
+  });
 });
