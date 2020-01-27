@@ -21,7 +21,7 @@ In order to get this running on your local machine you will need the following i
 
 ### Installing
 
-Clone the github repo
+Unzip the zip folder (or you can clone the githup repo with)
 
 ```
 git clone https://github.com/j-cleary914/mars-rover
