@@ -21,13 +21,7 @@ In order to get this running on your local machine you will need the following i
 
 ### Installing
 
-Unzip the zip folder (or you can clone the githup repo with)
-
-```
-git clone https://github.com/j-cleary914/mars-rover
-```
-
-Then you can install mocha and chai which are required for testing with
+Unzip the zip folder, then in the directory of the unzipped folder you can install mocha and chai which are required for testing with
 
 ```
 npm install
