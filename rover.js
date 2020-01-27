@@ -1,10 +1,10 @@
 let rover = {
   pos: [0, 0, "N"],
   updatePos: function(initialPos, instructions) {
-    console.log({ initialPos }, { instructions });
     this.pos = initialPos;
 
     for (let i = 0; i < instructions.length; i++) {
+      //handles command to turn right
       if (instructions[i] === "R") {
         if (this.pos[2] === "N") {
           this.pos[2] = "E";
@@ -15,7 +15,9 @@ let rover = {
         } else {
           this.pos[2] = "N";
         }
-      } else if (instructions[i] === "L") {
+      }
+      //handles command to turn left
+      else if (instructions[i] === "L") {
         if (this.pos[2] === "N") {
           this.pos[2] = "W";
         } else if (this.pos[2] === "E") {
@@ -25,7 +27,9 @@ let rover = {
         } else {
           this.pos[2] = "S";
         }
-      } else if (instructions[i] === "M") {
+      }
+      //handles command to turn move forwards
+      else if (instructions[i] === "M") {
         if (this.pos[2] === "N") {
           this.pos[1]++;
         } else if (this.pos[2] === "E") {
